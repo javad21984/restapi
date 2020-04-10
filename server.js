@@ -2,7 +2,9 @@ const express = require('express')
 const hbs = require('hbs')
 const path = require('path')
 const fs = require('fs')
-const port = 3000;
+
+const port = 6000;
+
 const app = express();
 
 app.set('view engine', 'hbs');
