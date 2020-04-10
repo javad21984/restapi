@@ -2,7 +2,7 @@ const express = require('express')
 const hbs = require('hbs')
 const path = require('path')
 const fs = require('fs')
-
+const port = 3000;
 const app = express();
 
 app.set('view engine', 'hbs');
@@ -39,6 +39,6 @@ app.get('/app', (req, res) =>{
     res.send('Thats my app')
 })
 
-app.listen(3000, () =>{
+app.listen(port, () =>{
     console.log('Server is Run')
 })
